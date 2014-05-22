@@ -5,48 +5,29 @@
 
 @import "compass/reset";
 
+@import "grid";
+@import "typography";
 
 html {
   body {
-    // 1. Font family
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    
-    // 2. Font size
-    font-size: 100%;
-    
-    // 3. Line height
-    line-height: 1.25;
-    
-    // Gutter
-    $gutter: 1.25em;
-    
-    // 4. Characters per row
-    $characters-per-row: 40;
-    
-    // 5. Cell width
-    // - This formula is a guess, it was measured by hand
-    $cell-width: $characters-per-row * $gutter/2;
-    
-    
-    // 6. Grid width
-    // - The cell is to wide; it must be divided into 2 or 3 columns, according to the nr. of characters per row (40 or 60)
-    $grid-width: $cell-width/2;
-    
-    // 6. Cell height
-    // - four lines of text, it has nothing to do with the cell-width
-    $cell-height: $gutter*4;
+    @include typographic-grid;
+    @include typographic-elements;
     
     article {
-      p {
-        max-width: $cell-width;
-      }
+      max-width: $cell-width;
     }
     
+    
+    
+    
+    // The visual grid
+    // ---------------------------------------------
     #grid {
+      display: block;
+      
       position: absolute;
       top: 0;
       opacity: .1;
-      display: block;
       z-index: -1;
     }
     

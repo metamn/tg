@@ -73,39 +73,41 @@ html body {
   font-size: 100%;
   line-height: 1.25;
 }
-/* line 34, typography.scss */
+/* line 35, typography.scss */
 html body h1 {
   font-weight: bold;
   margin-top: 1.25em;
   margin-top: 2.5em;
-  margin-bottom: 1.25em;
+  margin-bottom: calc(1.25em - 1px);
   border-bottom: 1px solid;
   border-bottom: 0.625em solid;
   padding-bottom: 0.625em;
+  margin-bottom: 1.25em;
   border-bottom: none;
   padding-top: 0.625em;
   color: #fff;
   background: #000;
 }
-/* line 38, typography.scss */
+/* line 39, typography.scss */
 html body h2 {
   font-weight: bold;
   margin-top: 1.25em;
   margin-top: 2.5em;
-  margin-bottom: 1.25em;
+  margin-bottom: calc(1.25em - 1px);
   border-bottom: 1px solid;
   border-bottom: 0.625em solid;
   padding-bottom: 0.625em;
+  margin-bottom: 1.25em;
 }
-/* line 42, typography.scss */
+/* line 43, typography.scss */
 html body h3 {
   font-weight: bold;
   margin-top: 1.25em;
   margin-top: 2.5em;
-  margin-bottom: 1.25em;
+  margin-bottom: calc(1.25em - 1px);
   border-bottom: 1px solid;
 }
-/* line 46, typography.scss */
+/* line 47, typography.scss */
 html body h4 {
   font-weight: bold;
   margin-top: 1.25em;

@@ -16,19 +16,17 @@
 @mixin h2 {
   @include h3;
   
-  margin-top: $gutter*3;
-  margin-bottom: $gutter*2;
   border-bottom: $gutter/2 solid;
-  padding-bottom: $gutter/4;
+  padding-bottom: $gutter/2;
 }
 
 @mixin h1 {
   @include h2;
   
   border-bottom: none;
+  padding-top: $gutter/2;
   color: #fff;
   background: #000;
-  padding-top: $gutter/4
 }
 
 

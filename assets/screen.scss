@@ -14,7 +14,9 @@ html {
     @include typographic-elements;
     
     article {
-      max-width: $cell-width;
+      width: $cell-width;
+      float: left;
+      margin-right: $gutter;
     }
     
     
@@ -34,22 +36,22 @@ html {
     #grid .col {
       border-right: 1px solid;
       border-bottom: 1px solid;
-      width: $grid-width + $gutter;
-      height: $cell-height + $gutter;
+      width: calc(#{$grid-width} + #{$gutter} - 1px);
+      height: calc(#{$cell-height} + #{$gutter} - 1px);
       float: left;
     }
     
     #grid .gutter-right {
       float: right;
       border-left: 1px solid;
-      width: $gutter;
+      width: calc(#{$gutter} - 1px);
       height: 100%;
     }
     
     #grid .gutter-bottom {
       float: left;
       border-bottom: 1px solid;
-      height: $gutter;
+      height: calc(#{$gutter} - 1px);
       width: 100%;
     }
   }

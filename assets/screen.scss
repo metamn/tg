@@ -16,5 +16,25 @@ html {
     
     // 3. Line height
     line-height: 1.25;
+    
+    // Gutter
+    $gutter: 1.25em;
+    
+    // 4. Characters per row
+    $characters-per-row: 40;
+    
+    // 5. Cell width
+    // - This formula is a guess, it was measured by hand
+    $cell-width: $characters-per-row * $gutter/2;
+    
+    // 6. Cell height
+    // - four lines of text, it has nothing to do with the cell-width
+    $cell-height: $gutter*4;
+    
+    article {
+      p {
+        max-width: $cell-width;
+      }
+    }
   }
 }

@@ -36,5 +36,35 @@ html {
         max-width: $cell-width;
       }
     }
+    
+    #grid {
+      position: absolute;
+      top: 0;
+      opacity: .1;
+      display: block;
+      z-index: -1;
+    }
+    
+    #grid .col {
+      border-right: 1px solid;
+      border-bottom: 1px solid;
+      width: $cell-width + $gutter;
+      height: $cell-height + $gutter;
+      float: left;
+    }
+    
+    #grid .gutter-right {
+      float: right;
+      border-left: 1px solid;
+      width: $gutter;
+      height: 100%;
+    }
+    
+    #grid .gutter-bottom {
+      float: left;
+      border-bottom: 1px solid;
+      height: $gutter;
+      width: 100%;
+    }
   }
 }

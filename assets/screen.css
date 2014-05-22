@@ -77,3 +77,33 @@ html body {
 html body article p {
   max-width: 25em;
 }
+/* line 40, screen.scss */
+html body #grid {
+  position: absolute;
+  top: 0;
+  opacity: .1;
+  display: block;
+  z-index: -1;
+}
+/* line 48, screen.scss */
+html body #grid .col {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  width: 26.25em;
+  height: 6.25em;
+  float: left;
+}
+/* line 56, screen.scss */
+html body #grid .gutter-right {
+  float: right;
+  border-left: 1px solid;
+  width: 1.25em;
+  height: 100%;
+}
+/* line 63, screen.scss */
+html body #grid .gutter-bottom {
+  float: left;
+  border-bottom: 1px solid;
+  height: 1.25em;
+  width: 100%;
+}

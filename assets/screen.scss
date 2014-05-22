@@ -27,6 +27,11 @@ html {
     // - This formula is a guess, it was measured by hand
     $cell-width: $characters-per-row * $gutter/2;
     
+    
+    // 6. Grid width
+    // - The cell is to wide; it must be divided into 2 or 3 columns, according to the nr. of characters per row (40 or 60)
+    $grid-width: $cell-width/2;
+    
     // 6. Cell height
     // - four lines of text, it has nothing to do with the cell-width
     $cell-height: $gutter*4;
@@ -48,7 +53,7 @@ html {
     #grid .col {
       border-right: 1px solid;
       border-bottom: 1px solid;
-      width: $cell-width + $gutter;
+      width: $grid-width + $gutter;
       height: $cell-height + $gutter;
       float: left;
     }

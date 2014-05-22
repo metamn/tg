@@ -24,8 +24,11 @@
 @mixin h1 {
   @include h2;
   
+  margin-top: 0;
   border-bottom: none;
-  padding-top: $gutter/2;
+  padding: $gutter/2;
+  width: calc(100% - #{$gutter});
+  
   color: #fff;
   background: #000;
 }

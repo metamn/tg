@@ -69,11 +69,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 12, screen.scss */
 html body {
+  width: 98%;
+  margin: 1% auto;
   font-family: "Inconsolata", monospace;
   font-size: 100%;
   line-height: 1.25;
 }
-/* line 35, typography.scss */
+/* line 38, typography.scss */
 html body h1 {
   font-weight: bold;
   margin-top: 1.25em;
@@ -83,12 +85,14 @@ html body h1 {
   border-bottom: 0.625em solid;
   padding-bottom: 0.625em;
   margin-bottom: 1.25em;
+  margin-top: 0;
   border-bottom: none;
-  padding-top: 0.625em;
+  padding: 0.625em;
+  width: calc(100% - 1.25em);
   color: #fff;
   background: #000;
 }
-/* line 39, typography.scss */
+/* line 42, typography.scss */
 html body h2 {
   font-weight: bold;
   margin-top: 1.25em;
@@ -99,7 +103,7 @@ html body h2 {
   padding-bottom: 0.625em;
   margin-bottom: 1.25em;
 }
-/* line 43, typography.scss */
+/* line 46, typography.scss */
 html body h3 {
   font-weight: bold;
   margin-top: 1.25em;
@@ -107,18 +111,18 @@ html body h3 {
   margin-bottom: calc(1.25em - 1px);
   border-bottom: 1px solid;
 }
-/* line 47, typography.scss */
+/* line 50, typography.scss */
 html body h4 {
   font-weight: bold;
   margin-top: 1.25em;
 }
-/* line 16, screen.scss */
+/* line 19, screen.scss */
 html body article {
   width: 38.125em;
   float: left;
   margin-right: 1.25em;
 }
-/* line 27, screen.scss */
+/* line 30, screen.scss */
 html body #grid {
   display: block;
   position: absolute;
@@ -126,7 +130,7 @@ html body #grid {
   opacity: .1;
   z-index: -1;
 }
-/* line 36, screen.scss */
+/* line 39, screen.scss */
 html body #grid .col {
   border-right: 1px solid;
   border-bottom: 1px solid;
@@ -134,14 +138,14 @@ html body #grid .col {
   height: calc(5em + 1.25em - 1px);
   float: left;
 }
-/* line 44, screen.scss */
+/* line 47, screen.scss */
 html body #grid .gutter-right {
   float: right;
   border-left: 1px solid;
   width: calc(1.25em - 1px);
   height: 100%;
 }
-/* line 51, screen.scss */
+/* line 54, screen.scss */
 html body #grid .gutter-bottom {
   float: left;
   border-bottom: 1px solid;
